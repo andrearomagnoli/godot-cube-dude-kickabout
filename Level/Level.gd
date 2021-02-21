@@ -11,6 +11,7 @@ func _on_GoalDetector_body_entered(body, player_id):
 	get_tree().call_group('GamePieces', 'freeze')
 	update_score(player_id)
 	$ResetTimer.start()
+	$AirHorn.play()
 
 
 func _on_Timer_timeout():

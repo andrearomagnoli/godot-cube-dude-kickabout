@@ -42,8 +42,10 @@ func face_forward():
 			look_at(Vector3(-motion.x, 0, -motion.z)*SPEED, UP)
 
 
-func freeze(_player_id):
+func freeze(scoring_player_id):
 	can_move = false
+	if scoring_player_id == player_id:
+		$Particles.emitting = true
 
 
 func reset():

@@ -9,7 +9,7 @@ height = 0.6
 
 [sub_resource type="SpatialMaterial" id=2]
 params_diffuse_mode = 4
-albedo_color = Color( 1, 0.972549, 0.568627, 1 )
+albedo_color = Color( 1, 0.658824, 0.0666667, 1 )
 
 [sub_resource type="SphereShape" id=3]
 radius = 0.3

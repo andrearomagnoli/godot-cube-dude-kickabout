@@ -8,7 +8,7 @@ export var target_score = 3
 
 func _on_GoalDetector_body_entered(body, player_id):
 	print('Player '+str(player_id)+' has score a goal!')
-	get_tree().call_group('GamePieces', 'freeze')
+	get_tree().call_group('GamePieces', 'freeze', player_id)
 	update_score(player_id)
 	$ResetTimer.start()
 	$AirHorn.play()

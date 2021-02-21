@@ -42,7 +42,7 @@ func face_forward():
 			look_at(Vector3(-motion.x, 0, -motion.z)*SPEED, UP)
 
 
-func freeze():
+func freeze(_player_id):
 	can_move = false
 
 

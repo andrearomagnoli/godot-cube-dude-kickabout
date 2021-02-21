@@ -12,7 +12,7 @@ func reset():
 	sleeping = false
 
 
-func freeze():
+func freeze(_player_id):
 	sleeping = true
 
 
